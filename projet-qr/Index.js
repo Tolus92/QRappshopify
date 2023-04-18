@@ -9,7 +9,7 @@ const Shopify = require('shopify-api-node');
 
 const shopify = new Shopify({
     shopName: 'nowatest',
-    accessToken: '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'
+    accessToken: 'shpat_'
 });
 const ngrok = require('ngrok');
 
@@ -23,7 +23,7 @@ app.use('/api/products', productRoutes);
 app.use('/api/qr-codes', qrCodeRoutes);
 
 // Configuration de la connexion à la base de données
-mongoose.connect('mongodb+srv://TolusNowa:Nowamarket123456789@clustertest.nzjt155.mongodb.net/?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
